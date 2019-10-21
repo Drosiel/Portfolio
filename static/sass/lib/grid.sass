@@ -1,0 +1,48 @@
+.grid
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-end
+    justify-content: center
+
+.card
+    width: 400px
+    background: #ffffff
+    margin: 10px
+    display: flex
+    flex-direction: column
+    padding: 10px
+    border-radius: 5px 
+    box-shadow: 0 0 10px #000000;
+    &-title
+        font-size: 20px
+    &-text
+        flex: 1
+    &-nav
+        display: flex
+        justify-content: flex-end
+        margin: 20px 0 0 0
+        &__item
+            position: relative
+            padding: 5px 20px
+            margin: 2px
+            background: #898989
+            color: #000000
+            &:hover
+                &:after
+                    width: 100%
+            &:after
+                position: absolute
+                content: ""
+                bottom: 0
+                left: 50%
+                width: 0
+                height: 100%
+                background: #1231236b
+                transform: translateX(-50%) 
+                transition: all .2s ease-in-out                 
+                
+                             
+
+                
+                
+

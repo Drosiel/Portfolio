@@ -1,0 +1,56 @@
+.skills
+    background: $bg2
+    min-height: 300px
+    &-title
+        color: $bg1
+    &-ladder
+        &__item
+            width: 150px
+            height: 75px
+            margin: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            border: 4px solid $main-cl
+            position: relative
+            overflow: hidden
+            color: $bg1
+.item
+    &-box
+        position: absolute
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        left: 0
+        cursor: pointer
+    &-percent
+        position: absolute
+        width: 100%
+        height: 100%
+        background: red
+        right: 0
+        transform: translateX(-100%)
+        z-index: -1
+        opacity: 1
+        &:after
+            content: ""
+            position: absolute
+            border-left: 38px solid transparent
+            border-right: 38px solid transparent
+
+.up
+    &:after
+        top: 43%
+        right: -43px
+        transform: rotate(90deg)
+        border-bottom: 10px solid green
+.down
+    &:after
+        top: 43%
+        right: -33px
+        transform: rotate(-90deg)
+        border-bottom: 10px solid red
+
+            

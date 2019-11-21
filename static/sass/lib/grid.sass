@@ -1,22 +1,26 @@
 .grid
     display: flex
     flex-wrap: wrap
-    align-items: flex-end
     justify-content: center
+    width: 100%
+    margin: 0 auto
 
 .card
-    width: 400px
-    background: #50505050
+    width: 100%
+    flex: 1
+    background: $bg2
     margin: 10px
     display: flex
     flex-direction: column
     padding: 10px
     border-radius: 5px 
-    box-shadow: 0 0 10px #000000;
+    box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5)
+    color: $bg1
+    
     &-title
         font-size: 35px
-        font-family: 'Long Cang', cursive;
         padding: 0 0 5px 0
+        text-transform: uppercase
     &-text
         flex: 1
     &-nav
@@ -27,9 +31,9 @@
             position: relative
             padding: 5px 20px
             margin: 2px
-            background: #900000
+            background: $main-cl
             border-radius: 2px
-            color: #000000
+            color: $bg2
             &:hover
                 &:after
                     width: 100%
@@ -40,9 +44,9 @@
                 left: 50%
                 width: 0
                 height: 2px
-                background: #400000
+                background: $bg2
                 transform: translateX(-50%) 
-                transition: all .25s ease-in-out                 
+                transition: all .2s ease-in-out                 
                 
                              
 

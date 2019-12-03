@@ -671,10 +671,10 @@ if(false) {}
 /* 8 */
 /***/ (function(module, exports) {
 
-/*import bg from '../img/bg.jpg'
-let header = document.querySelector('.header')
-header.style.backgroundImage = `url(${bg})`
-header.style.backgroundPosition = `center center` */
+/*import bj from '../img/bj.jpg'
+let japan = document.querySelector('.japan')
+japan.style.backgroundImage = `url(${bj})`
+japan.style.backgroundPosition = `center center`*/
 
 /***/ })
 /******/ ]);

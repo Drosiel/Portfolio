@@ -315,33 +315,45 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
   margin: 0 auto; }
 
 .card {
-  width: 100%;
-  flex: 1;
-  background: #282828;
+  width: 250px;
+  height: 400px;
   margin: 10px;
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
+  background: #566565;
+  box-shadow: 0 20px 5px -10px rgba(0, 0, 0, 0.5);
   color: #c9beae; }
   .card-title {
-    font-size: 35px;
-    padding: 0 0 5px 0;
-    text-transform: uppercase; }
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #282828;
+    position: relative; }
+    .card-title:after {
+      position: absolute;
+      content: "";
+      width: 20%;
+      height: 4px;
+      background: #282828;
+      left: 40%;
+      bottom: -7px; }
   .card-text {
-    flex: 1; }
+    flex: 1;
+    display: none; }
   .card-nav {
     display: flex;
-    justify-content: flex-end;
-    margin: 20px 0 0 0; }
+    justify-content: center; }
     .card-nav__item {
       position: relative;
-      padding: 5px 20px;
+      padding: 5px;
       margin: 2px;
       background: #d34801;
       border-radius: 2px;
@@ -469,8 +481,7 @@ body {
     color: #282828; }
   .work-box {
     display: flex;
-    flex-direction: row;
-    max-width: 1100px; }
+    flex-direction: row; }
 
 .skills {
   background: #282828;

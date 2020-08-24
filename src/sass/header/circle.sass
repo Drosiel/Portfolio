@@ -1,0 +1,151 @@
+.circle
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    >:nth-child(1)
+        width: 550px 
+        height: 550px
+        background: #000000
+        &:after
+            content: ""
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 1px
+            height: 1px
+            left: 13px
+            background: #000000
+            z-index: 1
+            border-radius: 15px 
+            transition: all 0.4s, background 0.05s, transform 1s
+        &:hover
+            background: #8ada3f
+            &:after
+                content: "Привет"
+                width: 200px
+                height: 100px
+                left: -120px
+                background: #8ada3f
+                transform: translate(60px)
+
+    >:nth-child(2)
+        width: 480px
+        height: 480px
+        background: #ffffff
+        &:after
+            content: ""
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 1px
+            height: 1px
+            top: 13px
+            background: #ffffff
+            z-index: 1
+            border-radius: 15px 
+            transition: all 0.4s, background 0.05s, transform 1s
+        &:hover
+            background: #0acddb
+            &:after
+                content: "Привет"
+                width: 200px
+                height: 100px
+                top: -50px
+                background: #0acddb
+                transform: translate(0, -30px)
+
+    >:nth-child(3)
+        width: 410px
+        height: 410px
+        background: #000000
+        &:after
+            content: ""
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 1px
+            height: 1px
+            right: 13px
+            background: #000000
+            z-index: 1
+            border-radius: 15px 
+            transition: all 0.4s, background 0.05s, transform 1s
+        &:hover
+            background: #7967df
+            &:after
+                content: "Привет"
+                width: 200px
+                height: 100px
+                right: -50px
+                background: #7967df
+                transform: translate(-30px)
+
+    >:nth-child(4)
+        width: 340px
+        height: 340px
+        background: #ffffff
+        &:after
+            content: ""
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 1px
+            height: 1px
+            bottom: 13px
+            background: #ffffff
+            z-index: 1
+            border-radius: 15px 
+            transition: all 0.4s, background 0.001s, transform 1s
+        &:hover
+            background: #e73bb4
+            &:after
+                content: "Привет"
+                width: 200px
+                height: 100px
+                bottom: -50px
+                background: #e73bb4
+                transform: translate(0, 27px)
+
+    >:nth-child(5)
+        width: 270px
+        height: 270px
+        background: #000000
+        &:after
+            content: ""
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            width: 1px
+            height: 1px
+            left: 13px
+            background: #000000
+            z-index: 1
+            border-radius: 15px 
+            transition: all 0.4s, background 0.05s, transform 1s
+        &:hover
+            background: #f1872a
+            &:after
+                content: "Привет"
+                width: 200px
+                height: 100px
+                left: -50px
+                background: #f1872a
+                transform: translate(30px)
+
+    >:nth-child(6)
+        width: 200px
+        height: 200px
+        background: #ffffff
+    &__item
+        position: absolute
+        border-radius: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+            

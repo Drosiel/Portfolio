@@ -1,0 +1,172 @@
+@charset "UTF-8";
+body {
+  font-family: 'Russo One', sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.content {
+  display: flex;
+  justify-content: space-between; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.header {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .circle > :nth-child(1) {
+    width: 550px;
+    height: 550px;
+    background: #000000; }
+    .circle > :nth-child(1):after {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      left: 13px;
+      background: #000000;
+      z-index: 1;
+      border-radius: 50%;
+      transition: all 0.4s, background 0.05s, transform 1s; }
+    .circle > :nth-child(1):hover {
+      background: #8ada3f; }
+      .circle > :nth-child(1):hover:after {
+        content: "Привет";
+        width: 200px;
+        height: 200px;
+        left: -120px;
+        background: #8ada3f;
+        transform: translate(40px, -50px); }
+  .circle > :nth-child(2) {
+    width: 480px;
+    height: 480px;
+    background: #ffffff; }
+    .circle > :nth-child(2):after {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      top: 13px;
+      background: #ffffff;
+      z-index: 1;
+      border-radius: 50%;
+      transition: all 0.4s, background 0.05s, transform 1s; }
+    .circle > :nth-child(2):hover {
+      background: #0acddb; }
+      .circle > :nth-child(2):hover:after {
+        content: "Привет";
+        width: 200px;
+        height: 200px;
+        top: -50px;
+        background: #0acddb;
+        transform: translate(0, -30px); }
+  .circle > :nth-child(3) {
+    width: 410px;
+    height: 410px;
+    background: #000000; }
+    .circle > :nth-child(3):after {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      right: 13px;
+      background: #000000;
+      z-index: 1;
+      border-radius: 50%;
+      transition: all 0.4s, background 0.05s, transform 1s; }
+    .circle > :nth-child(3):hover {
+      background: #7967df; }
+      .circle > :nth-child(3):hover:after {
+        content: "Привет";
+        width: 200px;
+        height: 200px;
+        right: -50px;
+        background: #7967df;
+        transform: translate(-30px, 40px); }
+  .circle > :nth-child(4) {
+    width: 340px;
+    height: 340px;
+    background: #ffffff; }
+    .circle > :nth-child(4):after {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      bottom: 13px;
+      background: #ffffff;
+      z-index: 1;
+      border-radius: 50%;
+      transition: all 0.4s, background 0.001s, transform 1s; }
+    .circle > :nth-child(4):hover {
+      background: #e73bb4; }
+      .circle > :nth-child(4):hover:after {
+        content: "Привет";
+        width: 200px;
+        height: 200px;
+        bottom: -50px;
+        background: #e73bb4;
+        transform: translate(0, 27px); }
+  .circle > :nth-child(5) {
+    width: 270px;
+    height: 270px;
+    background: #000000; }
+    .circle > :nth-child(5):after {
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      left: 13px;
+      background: #000000;
+      z-index: 1;
+      border-radius: 50%;
+      transition: all 0.4s, background 0.05s, transform 1s; }
+    .circle > :nth-child(5):hover {
+      background: #f1872a; }
+      .circle > :nth-child(5):hover:after {
+        content: "Привет";
+        width: 200px;
+        height: 200px;
+        left: -50px;
+        background: #f1872a;
+        transform: translate(30px); }
+  .circle > :nth-child(6) {
+    width: 200px;
+    height: 200px;
+    background: #ffffff; }
+  .circle__item {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+

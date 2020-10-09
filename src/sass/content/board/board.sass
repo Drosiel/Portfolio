@@ -1,0 +1,36 @@
+.board
+    &__inner
+        margin: 20px 0 0 0
+    &__content
+        display: flex
+        position: relative
+    &__sidebar
+        position: absolute
+        max-width: 276px
+        flex: 1 0 276px
+        padding: 20px
+        border: 3px solid $back-color
+        border-radius: 12px
+        background: #ffffff
+
+        opacity: 0
+        pointer-events: none
+        &-item
+            &:not(:last-child)
+                margin: 0 0 25px
+    &__box
+        display: flex
+    &__item
+        &:not(:last-child)
+            margin-right: 10px
+        padding: 5px
+        max-height: 350px
+        min-height: 350px
+        border: 1px dashed $back-color
+        &-title
+            font-weight: 400
+            font-size: 1.2rem
+            padding: 5px
+            margin: 0 0 10px 0
+            border-bottom: 1px dashed $back-color
+    

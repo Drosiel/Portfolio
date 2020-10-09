@@ -1,0 +1,32 @@
+.sidebar
+    &__avatar
+        &-photo
+            width: 180px
+            height: 180px
+            background: red
+            border-radius: 50%
+            position: relative
+            margin: 0 auto
+    &__contacts
+        &-list
+            display: flex
+            flex-direction: column
+        &-item
+            font-size: .9rem
+            &:not(:last-child)
+                margin-bottom: 7px 
+        &-link
+            color: $back-color
+            &:hover
+                color: $hover-color
+    &__info
+        &-item
+            display: flex
+            flex-direction: column
+            margin: 12px 0
+        &-row
+        &-title
+            font-size: .7rem
+            margin: 0 0 3px 0
+            color: $back-color
+        &-text

@@ -24,7 +24,7 @@ export class Sidebar extends React.Component {
                         <div className="sidebar-item sidebar__contacts">
                             <ul className="sidebar__contacts-list">
                                 <li className="sidebar__contacts-item">
-                                    <a href="hh.ru/resume/d5cc3e7cff03ab38c60039ed1f416e4a6e6462" className="sidebar__contacts-link" target="_blank">Резюме на hh</a>
+                                    <a href="https://hh.ru/resume/d5cc3e7cff03ab38c60039ed1f416e4a6e6462" className="sidebar__contacts-link" target="_blank">Резюме на hh</a>
                                 </li>
                                 {/* <li className="sidebar__contacts-item">
                                     <a href="" className="sidebar__contacts-link" target="_blank">Резюме на LinkedIn</a> 

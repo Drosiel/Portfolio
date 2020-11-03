@@ -5,10 +5,14 @@
     },
     {
         "id": 2,
-        "skill": "CSS"
+        "skill": "CSS/SASS"
     },
     {
         "id": 3,
         "skill": "JavaScript"
+    },
+    {
+        "id": 4,
+        "skill": "React"
     }
 ]

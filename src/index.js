@@ -1,5 +1,4 @@
 import './js/main';
-//import sprite from "./img/sprite.svg";
 import './sass/style.sass';
 
 import React from "react";

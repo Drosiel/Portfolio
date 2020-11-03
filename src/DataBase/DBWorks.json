@@ -3,6 +3,13 @@
     {
         "id": 1,
         "name": "'Krevetka'",
-        "link": "https://drosiel.github.io/krevetka/dist/"
+        "link": "https://drosiel.github.io/krevetka/dist/",
+        "description": "Гл.стр. сайта-магазина"
+    },
+    {
+        "id": 2,
+        "name": "Slider",
+        "link": "#",
+        "description": "Слайдер"
     }
 ]

@@ -1,22 +1,71 @@
 .works
     width: 350px
+    position: relative
     &__list
         display: flex
         flex-wrap: wrap
     &__item
-        flex: 1 1 25%
-        max-width: 25%
-        padding: 2px
-    &__box
-        background: red
+        position: relative
         display: flex
-        align-items: center
-        justify-content: center
-        padding: 15px 0
+        flex: 1 1 20%
+        max-width: 60px
+        height: 60px
+        margin: 2px
         cursor: pointer
+        border: 2px solid $back-color
+        overflow: hidden
+        &:hover
+            border: 2px solid $hover-color
+            .works__link
+                background: $back-color
+                color: $hover-color
+            .works__disc
+                //display: block
+            .works__anim
+                opacity: 1
+                background: linear-gradient(90deg, $back-color, #fff 25% 75%, $back-color)
+                top: 75px
+                left: 50px
+        &:nth-child(1)
+            .works__disc
+                top: 0
+                right: 0
+    &__box
+        width: 100%
+        height: 100%
     &__link
-        color: #000
-        font-size: 0.8rem
+        background: #fff
+        width: 100%
+        height: 100%
+        color: $back-color
+        font-size: 1.2rem
         display: flex
         justify-content: center
         align-items: center
+        transition: background 0.8s
+    &__disc
+        color: $back-color
+        position: absolute
+        display: none
+    &__anim
+        opacity: 1
+        display: block
+        position: absolute
+        background: #fff
+        width: 150px
+        height: 100px
+        top: -150px
+        left: -175px
+        transform: rotate(45deg)
+        transition: top 0.8s, left 0.8s
+
+                
+                
+// animation-duration: 3s
+// animation-name: rotate1
+// animation-iteration-count: infinite
+// @keyframes rotate1 
+//     0% 
+//         transform: rotate(0deg)
+//     100% 
+//         transform: rotate(360deg)

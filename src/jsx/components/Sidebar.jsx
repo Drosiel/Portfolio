@@ -4,13 +4,21 @@ export class Sidebar extends React.Component {
     render() {
         return(
             <React.Fragment>
-                <div className="board__item sidebar">
+                <div className="sidebar">
                     <div className="board__item-content">
                         <div className="sidebar__item sidebar__avatar">
                             <div className="sidebar__avatar-photo"></div>
                         </div>
                         <div className="sidebar__item sidebar__info">
                             <ul className="sidebar__info-list">
+                                <li className="sidebar__info-item">
+                                    <span className="sidebar__info-row sidebar__info-title">Возраст:</span>
+                                    <span className="sidebar__info-row sidebar__info-text">31</span>
+                                </li>
+                                <li className="sidebar__info-item">
+                                    <span className="sidebar__info-row sidebar__info-title">Примерный оклад:</span>
+                                    <span className="sidebar__info-row sidebar__info-text">40 000 ₽</span>
+                                </li>
                                 <li className="sidebar__info-item">
                                     <span className="sidebar__info-row sidebar__info-title">Город:</span>
                                     <span className="sidebar__info-row sidebar__info-text">Челябинск</span>

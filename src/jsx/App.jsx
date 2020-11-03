@@ -5,6 +5,7 @@ import { Works } from "./components/Works"
 import { Skills } from "./components/Skills"
 import { Sidebar } from "./components/Sidebar"
 import { Footer } from "./components/Footer"
+import { ShortDisc } from "./components/ShortDisc"
 
 export default class App extends React.Component {
     render() {
@@ -18,11 +19,12 @@ export default class App extends React.Component {
                                 <Sidebar />
                                 <Skills />
                                 <Works />
+                                <ShortDisc />
                             </div>
                         </div>
                     </div>
                 </main>
-                <Footer />
+                {/* <Footer /> */}
             </React.Fragment>
         )
     }
